@@ -1,0 +1,86 @@
+.parent {
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    box-sizing: border-box;
+    /* padding: 10px; */
+}
+
+.child1 {
+    height: 27%;
+    width: 96%;
+    background-color: lightseagreen;
+    padding: 20px;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.child2 {
+    height: 60%;
+    width: 100%;
+    background-color:green;
+}
+
+.buttons {}
+
+.left {
+    height: 100%;
+    width: 50%;
+    padding: 5px;
+    background-color:lightseagreen;
+}
+
+.right {
+    height: 100%;
+    width: 40%;
+    background-color: lightseagreen;
+    padding: 10px
+}
+
+.button3 {}
+
+.yellow {
+    background-color: yellow;
+    height: 30px;
+}
+
+.black {
+    background-color: black;
+    height: 30px;
+    color: white;
+}
+
+.free {
+    height: 30px;
+    background-color: blue;
+    color: white;
+}
+
+.ins {
+    height: 30px;
+}
+
+.addtocart {
+    height: 30px;
+    background-color: green;
+    color: white;
+    margin-left: 20px;
+}
+
+.apply {
+    color: white;
+    background-color:lightseagreen;
+    height: 30px;
+}
+.down{
+
+    
+    height:70%;
+    width: 100%;
+    background-color: green;
+}
+.tab{
+    width: 100%;
+    text-align: center;
+}

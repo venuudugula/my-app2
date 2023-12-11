@@ -1,0 +1,30 @@
+label{
+    display: inline-block;
+    width: 100px;
+    margin-bottom: 10px;
+}
+.parent{
+    background-color: aqua;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    overflow: auto;
+   
+}
+.child{
+    height: 60%;
+    width: 60%;
+    background-color:white;
+    margin: 100px;
+    text-align: center;
+    align-items: center;
+    border-radius: 30px;
+    overflow: auto;
+   
+}
+form{
+    margin-top: 50px;
+}
+p{
+    color:red;
+}

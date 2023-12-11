@@ -1,0 +1,19 @@
+<table class="table">
+
+    <thead>
+        <tr>
+            <th>name</th>
+            <th>marks</th>
+            <th>greade</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let student of students"> 
+        <td>{{student.name}}</td>
+        <td [ngStyle]="{'color':student.marks>=35 ? 'green' : 'red'}">{{student.marks}}</td>
+
+        <td [ngClass]=" {'green':student.greade=='a','blue':student.greade=='b','red':student.greade=='fail'}">{{student.marks}}</td>
+    </tr>
+    </tbody>
+</table>
+

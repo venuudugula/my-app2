@@ -1,0 +1,26 @@
+.parent{
+    height: 100%;
+    width: 100%;
+    background-color: white;
+}
+.child{
+    height:100vh;
+    width: 100vw;
+    background-color: white;
+    margin: 0px;
+
+   
+}
+.hedding{
+    margin-left: 500px;
+}
+.left{
+    height: 100vh;
+    width: 50%;
+    font-size:50px;
+}
+.right{
+    height: 100%;
+    width: 50%;
+    background-color:white;
+}

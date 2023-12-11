@@ -1,0 +1,37 @@
+.border1{
+    height:10vh;
+    width: 100%;
+    background-color: white;
+
+}
+.image{
+    height:100%;
+    width:100%;
+}
+.product{
+    height: 20%;
+    /* display: flex; */
+}
+.child{
+    
+    display: flex;
+    justify-content: space-evenly
+    ;
+    flex-wrap: wrap;
+}
+.iamge1{
+    height:200px;
+}
+.name{
+    margin-left:35px;
+}
+.name4{
+    margin-left: 35px;
+}
+
+.name1{
+    margin-left:35px;
+}
+.parent{
+    background-color: white;
+}

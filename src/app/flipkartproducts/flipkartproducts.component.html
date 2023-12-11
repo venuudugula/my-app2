@@ -1,0 +1,44 @@
+<!-- <table class="border1" border="1">
+    <thead>
+        <th>id</th>
+        <th>title</th>
+        <th>price</th>
+        <th>description</th>
+        <th>category</th>
+        <th>rating</th>
+        <th>rate</th>
+        <th>count</th>
+        <th>image</th>
+    </thead>
+    <tbody *ngFor="let flipkartproduct of flipkart">
+        <td>{{flipkartproduct.id}}</td>
+        <td>{{flipkartproduct.title}}</td>
+        <td>{{flipkartproduct.price}}</td>
+        <td>{{flipkartproduct.description}}</td>
+        <td>{{flipkartproduct.category}}</td>
+        <td>{{flipkartproduct.rating.rate}}</td>
+        <td>{{flipkartproduct.rating.rate}}</td>
+        <td>{{flipkartproduct.rating.count}}</td>
+       <td>
+        <img class="image" src="{{flipkartproduct.image}}" alt="">
+       </td>
+    </tbody>
+</table> -->
+<div class="parent">
+    <h1>flipkartproduct</h1>
+    <div class="child">
+        <div class="product" *ngFor="let product of flipkart">
+            <img class="iamge1" src="{{product.image}}" alt="">
+            
+        
+        <p class="name">{{product.category}}</p>
+        <!-- <p class="name3">{{product.id}}</p> -->
+        <p class="name4">Price:{{product.price}}</p>
+        <!-- <p class="name2">{{product.description}}</p> -->
+
+        <p class="name1">rating:{{product.rating.rate}}</p>
+        <!-- <p class="name5">{{product.rating.count}}</p> -->
+    </div>
+       
+    </div>
+</div>

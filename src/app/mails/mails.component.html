@@ -1,0 +1,21 @@
+<table class="table1" >
+    <thead>
+        <tr>
+            <!-- <th>userId</th> -->
+            <th>id</th>
+            <th>title</th>
+            <th>completed</th>
+        
+        </tr>
+    </thead>
+    <tbody *ngFor="let mail of mails" >
+        <tr>
+            <td [ngStyle]="{'color': mail.completed==true? 'gray' : 'black'}">{{mail.userId}}</td>
+            <td [ngStyle]="{'color': mail.completed==true? 'gray' : 'black'}">{{mail.id}}</td>
+            <td [ngStyle]="{'color': mail.completed==true? 'gray' : 'black'}">{{mail.title}}</td>
+            <td [ngStyle]="{'color': mail.completed==true? 'gray' : 'black'}">{{mail.completed}}</td>
+
+        </tr>
+
+    </tbody>
+</table>

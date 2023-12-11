@@ -1,0 +1,18 @@
+<!-- <p>event works!</p> -->
+
+<div class="event">
+    <div class="child">
+        <h1 class="center">Event Registration</h1>
+        <br>
+        <input  class="input" type="search" [(ngModel)]="user">
+        <button (click)="submit()">Submit</button>
+        
+    
+        <h1 class="registerd">Registerd Users</h1>
+        <ol>
+            <li *ngFor="let name of names">{{name}}</li>
+        </ol>
+
+        <button  (click)="Delete()" *ngIf="names.length>0">Delete</button>
+    </div>
+</div>

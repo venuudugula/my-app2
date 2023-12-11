@@ -1,0 +1,23 @@
+.parent{
+    height:100vh;
+    width: 100vw;
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form{
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 20px;
+}
+button{
+    margin-top:20px;
+}
+label{
+    margin-right:20px;
+}
+.input1{
+    margin-right:20px;
+}

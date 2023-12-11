@@ -1,0 +1,17 @@
+.table1{
+    height:100vh;
+    width: 100%;
+}
+/* .table1 {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table1 th, .table1 td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+.name th {
+    background-color: #f2f2f2; /* Add a background color to the header row if needed */

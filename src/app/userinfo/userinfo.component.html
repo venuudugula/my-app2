@@ -1,0 +1,67 @@
+<div class="parent">
+
+    <div class="child">
+        <!-- <div class="hedding">
+            <h1>Userinfo</h1>
+        </div>  -->
+        <div class="left">
+            <table style="height: 50%;width: 50% ;">
+                <thead border="1">
+                    <tr>
+                    </tr>
+                </thead>
+                <tbody class="sno" *ngFor="let user of users">
+                     
+                    <img src="{{user.image}}" alt="" height="500px" width="500px">
+                    <p> Id: {{user.id}}</p>
+                    <p> firstname:&nbsp; &nbsp; {{user.firstName}}</p>
+                    <p> lastname:&nbsp; &nbsp; {{user.lastName}}</p>
+                    <p>maidenName:&nbsp; &nbsp; {{user.maidenName}}</p>
+                    <p> age:&nbsp; &nbsp;{{user.age}}</p>
+                    <p> gender:&nbsp; &nbsp; {{user.gender}}</p>
+                    <p> email: &nbsp; &nbsp; {{user.email}}</p>
+                    <p> phone:&nbsp; &nbsp;{{user.phone}}</p>
+                    <p>username:&nbsp; &nbsp;{{user.username}}</p>
+                    <p>password:&nbsp; &nbsp; {{user.password}}</p>
+                    <p> birthDate:&nbsp; &nbsp;{{user.birthDate}}</p>
+                    <p> bloodGroup:&nbsp; &nbsp;{{user.bloodGroup}}</p>
+                    <p> height:&nbsp; &nbsp;{{user.height}}</p>
+                    <p>weight:&nbsp; &nbsp;{{user.weight}}</p>
+                    <p>eyeColor:&nbsp; &nbsp; {{user.eyeColor}}</p>
+                    <p>haircolor:&nbsp; &nbsp;{{user.hair.color}}</p>
+                    <p> hairtype:&nbsp; &nbsp;{{user.hair.type}}</p>
+                    <p>domain:&nbsp; &nbsp; {{user.domain}}</p>
+                    <p>ip:&nbsp; &nbsp;{{user.ip}}</p>
+                    <p>address:&nbsp; &nbsp; {{user.address.address}}</p>
+                    <p>city:&nbsp; &nbsp;{{user.address.city}}</p>
+                    <p>coordinatesla:&nbsp; &nbsp;{{user.address.coordinates.lat}}</p>
+                    <p>lng:&nbsp; &nbsp;{{user.address.coordinates.lng}}</p>
+                    <p>postalCode:&nbsp; &nbsp;{{user.address.postalCode}}</p>
+                    <p>state:&nbsp; &nbsp;{{user.address.state}}</p>
+                    <p>macAddress:&nbsp; &nbsp;{{user.macAddress}}</p>
+                    <p>university:&nbsp; &nbsp;{{user.university}}</p>
+                    <p>cardExpire:&nbsp; &nbsp;{{user.bank.cardExpire}}</p>
+                    <p>cardNumber:&nbsp; &nbsp;v{{user.bank.cardNumber}}</p>
+                    <p>cardType:&nbsp; &nbsp;{{user.bank.cardType}}</p>
+                    <p>currency:&nbsp; &nbsp;{{user.bank.currency}}</p>
+                    <p>iban:&nbsp; &nbsp;{{user.bank.iban}}</p>
+                    <p>address:&nbsp; &nbsp;{{user.company.address.address}}</p>
+                    <p>city:&nbsp; &nbsp;{{user.company.address.city}}</p>
+                    <p>lat:&nbsp; &nbsp;{{user.company.address.coordinates.lat}}</p>
+                    <p>lng:&nbsp; &nbsp;{{user.company.address.coordinates.lng}}</p>
+                    <p>postalCode:&nbsp; &nbsp;{{user.company.address.postalCode}}</p>
+                    <p>state:&nbsp; &nbsp;{{user.company.address.state}}</p>
+                    <p>department:&nbsp; &nbsp;{{user.company.department}}</p>
+                    <p>name:&nbsp; &nbsp;{{user.company.name}}</p>
+                    <p>title:&nbsp; &nbsp;{{user.company.title}}</p>
+                    <p>ein:&nbsp; &nbsp;{{user.ein}}</p>
+                    <p>ssn:&nbsp; &nbsp;{{user.ssn}}</p>
+                    <p>userAgent:&nbsp; &nbsp;{{user.userAgent}}</p>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div>
+
+    </div>
+</div>
