@@ -23,6 +23,7 @@ import { CreateAccountComponent } from './create-account/create-account.componen
 import { UserFormComponent } from './user-form/user-form.component';
 import { UsertaskComponent } from './usertask/usertask.component';
 import { AuthenticationGuard } from './authentication.guard';
+import { NotiifyGuard } from './notiify.guard';
 
 const routes: Routes = [
   {path:'',component:LoginComponent},
@@ -41,11 +42,11 @@ const routes: Routes = [
     {path:'boredom',component:BoredomComponent},
     {path:'galary',component:GalaryComponent},
     {path:'useinfo',component:UserinfoComponent},
-    {path:'create-user',component:CreateUserComponent},
-    {path:'createvehicle',component:CreatevehicleComponent},
-    {path:'create-account',component:CreateAccountComponent},
-    {path:'user-form',component:UserFormComponent},
-    {path:'usertask',component:UsertaskComponent}
+    {path:'create-user',canDeactivate:[NotiifyGuard],component:CreateUserComponent},
+    {path:'createvehicle',canDeactivate:[NotiifyGuard],component:CreatevehicleComponent},
+    {path:'create-account',canDeactivate:[NotiifyGuard],component:CreateAccountComponent},
+    {path:'user-form',canDeactivate:[NotiifyGuard],component:UserFormComponent},
+    {path:'usertask',canDeactivate:[NotiifyGuard],component:UsertaskComponent}
 
     ]},
     {path:'login',component:LoginComponent},
