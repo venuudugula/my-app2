@@ -53,6 +53,8 @@
        </td>
        <td>{{user.id}}</td>
        <td>
+        <button (click)="view(user.id)">view</button>
+        <button (click)="Edit(user.id)">Edit</button>
         <button (click)="deleteUser(user.id)">delete</button>
        </td>
     

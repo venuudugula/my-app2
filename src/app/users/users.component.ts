@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { UserService } from '../user.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-users',
@@ -12,7 +13,7 @@ export class UsersComponent {
   public colom:string="";
   public order:string="";
   public pageno:number=0;
-  constructor(private _userservice: UserService) {
+  constructor(private _userservice: UserService,private _router:Router) {
 
     _userservice.getUsers().subscribe(
       (data: any) => {
@@ -66,12 +67,19 @@ export class UsersComponent {
 
         (data: any) => {
         alert("deleted successfully")
-        location.reload;
+        location.reload();
         },
         (error: any) => {
           alert("internal server error")
         }
       )
+    }
+    view(id:number){
+
+      this._router.navigateByUrl("/dashboard/user-details/"+id)
+    }
+    Edit(id:number){
+      this._router.navigateByUrl("/dashboard/edit-user/"+id)
     }
 
 }

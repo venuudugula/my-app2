@@ -24,6 +24,7 @@ import { UserFormComponent } from './user-form/user-form.component';
 import { UsertaskComponent } from './usertask/usertask.component';
 import { AuthenticationGuard } from './authentication.guard';
 import { NotiifyGuard } from './notiify.guard';
+import { UserDetailsComponent } from './user-details/user-details.component';
 
 const routes: Routes = [
   {path:'',component:LoginComponent},
@@ -46,7 +47,9 @@ const routes: Routes = [
     {path:'createvehicle',canDeactivate:[NotiifyGuard],component:CreatevehicleComponent},
     {path:'create-account',canDeactivate:[NotiifyGuard],component:CreateAccountComponent},
     {path:'user-form',canDeactivate:[NotiifyGuard],component:UserFormComponent},
-    {path:'usertask',canDeactivate:[NotiifyGuard],component:UsertaskComponent}
+    {path:'usertask',canDeactivate:[NotiifyGuard],component:UsertaskComponent},
+    {path:'user-details/:id',component:UserDetailsComponent},
+    {path:'edit-user/:id',component:CreateUserComponent}
 
     ]},
     {path:'login',component:LoginComponent},

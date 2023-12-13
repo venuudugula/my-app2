@@ -1,4 +1,5 @@
-<h1>Create User Form</h1>
+<h1 *ngIf="!id">Create User Form</h1>
+<h1 *ngIf="id">Edit User Form</h1>
 
 <form class="form1" [formGroup]="userform">
     <label >Name</label>&nbsp;&nbsp;
@@ -6,7 +7,7 @@
     <br>
     <br>
     <label >phone</label>&nbsp;&nbsp;
-    <input type="number" formControlName="phone">
+    <input type="text" formControlName="phone">
     <br>
     <br>
     <label >city</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -17,6 +18,6 @@
     <input type="text" formControlName="image">
     <br>
     <br>
-    <button (click)="submit()">submit</button>
+    <button (click)="submit()">{{id ?'Update':'Create'}}</button>
 
 </form>
