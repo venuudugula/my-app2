@@ -1,14 +1,13 @@
-
-<input type="text" placeholder="search" (keypress)="getfilteraccount()"[(ngModel)]="term">
+<input type="text" placeholder="search" (keypress)="getfilteraccount()" [(ngModel)]="term">
 <label for="">column</label>
 <select [(ngModel)]="colom">
-  <option >account_name</option>
-  <option >id</option>
+  <option>account_name</option>
+  <option>id</option>
 </select>
 <label for="">order</label>
 <select [(ngModel)]="order">
-<option >asc </option>
-<option > desc</option>
+  <option>asc </option>
+  <option> desc</option>
 </select>
 <button (click)="sortaccountusers()">sort</button>
 
@@ -23,39 +22,42 @@
 <button (click)="page()">page</button>
 
 <table class="tab" border="1">
-    <thead>
-      <tr>
-  
-          <th>Id</th>
-          <th>account_name</th>
-          <th>available_balance</th>
-       
-        <th>account_number</th>
-        <th>profie_picture</th>
-        <th>action</th>
-    
-        <!-- <th>Action</th> -->
-      </tr>
-    </thead>
-    <tbody>
-      <tr *ngFor="let account of accounts; let i=index">
-         
-       <td>{{account.id}}</td>
-       <td>{{account.account_name}}</td>
-       <td>{{account.available_balance}}</td>
-       <td>{{account.account_number}}</td>
-       <td>{{account.profie_picture}}</td>
-       
-       <td>
+  <thead>
+    <tr>
+
+      <th>Id</th>
+      <th>account_name</th>
+      <th>available_balance</th>
+      <th>account_number</th>
+      <th>city</th>
+      <th>profie_picture</th>
+      <th>action</th>
+      <!-- <th>Action</th> -->
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let account of accounts; let i=index">
+
+      <td>{{account.id}}</td>
+      <td>{{account.account_name}}</td>
+      <td>{{account.available_balance}}</td>
+      <td>{{account.account_number}}</td>
+      <td>{{account.city}}</td>
+      <!-- <td>{{account.profie_picture}}</td> -->
+
+      <td>
         <img src="{{account.profie_picture}}" alt="">
-       </td>
-       <td>
+      </td>
+      <td>
         <!-- <button (click)="deleteaccount(account.id)">delete</button> -->
         <button (click)="deleteUser(account.id)">deleteaccount</button>
+        <button (click)="view(account.id)">view</button>
+        <button (click)="edit(account.id)">Edit</button>
+        
 
-       </td>
-       <!-- <td>{{account.id}}</td> -->
-    
-      </tr>
-    </tbody>
-  </table>
+      </td>
+      <!-- <td>{{account.id}}</td> -->
+
+    </tr>
+  </tbody>
+</table>

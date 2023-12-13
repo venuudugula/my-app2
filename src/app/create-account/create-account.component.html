@@ -1,4 +1,5 @@
-<h1>Create account Form</h1>
+<h1 *ngIf="!id">Create account Form</h1>
+<h1 *ngIf="id">Edit Account</h1>
 
 <form class="form1" [formGroup]="accountform">
     <label >account_name</label>&nbsp;&nbsp;
@@ -17,6 +18,5 @@
     <input type="text" formControlName="profie_picture">
     <br>
     <br>
-    <button (click)="submit()">submit</button>
-
+    <button (click)="submit()">{{id ?'Update':'Create'}}</button>
 </form>

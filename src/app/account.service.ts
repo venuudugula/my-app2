@@ -15,6 +15,9 @@ public BaseURL:string="https://6128991386a213001729f9df.mockapi.io/test/v1/princ
     getaccount():Observable<any>{
       return this._httpClient.get(this.BaseURL)
     }
+    getaccounts(id:number):Observable<any>{
+      return this._httpClient.get(this.BaseURL+"/"+id)
+    }
     deleteaccount(id:string):Observable<any>{
       return this._httpClient.delete(this.BaseURL+"/"+id)
     }
@@ -32,4 +35,8 @@ public BaseURL:string="https://6128991386a213001729f9df.mockapi.io/test/v1/princ
     {
       return this._httpClient.post(this.BaseURL,data)
     }
+    Editaccount(id:any,data:any):Observable<any>{
+      return this._httpClient.put(this.BaseURL+"/"+id,data);
+    }
+    
 }

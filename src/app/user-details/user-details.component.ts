@@ -19,8 +19,8 @@ export class UserDetailsComponent {
             this.user = data;
           },
           (error: any) => {
-            alert("internal server error")
-          }
+            alert("internal server error");
+          },
         )
 
       }

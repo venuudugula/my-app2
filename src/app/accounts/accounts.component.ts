@@ -1,6 +1,7 @@
 import { Component, TemplateRef } from '@angular/core';
 import { AccountService } from '../account.service';
 import { identity } from 'rxjs';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-accounts',
@@ -9,14 +10,14 @@ import { identity } from 'rxjs';
 })
 export class AccountsComponent {
   public accounts:any=[];
-    deleteaccount: any;
+   public deleteaccount: any;
     public colom:string="";
     public order:string="";
     public term:string="";
     public pageno:number=0;
   // public accots:string=""
 
-  constructor(private _accountservice:AccountService)
+  constructor(private _accountservice:AccountService,private _router:Router)
   {
     _accountservice.getaccount().subscribe(
       (data:any)=>{
@@ -74,6 +75,13 @@ export class AccountsComponent {
           alert("internal server error")
         }
       )
+    }
+    view(id:number)
+    {
+      this._router.navigateByUrl("/dashboard/account-detailes/"+id);
+    }
+    edit(id:number){
+      this._router.navigateByUrl("/dashboard/edit-account/"+id)
     }
 }
   

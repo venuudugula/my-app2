@@ -31,6 +31,8 @@ import { UsertaskComponent } from './usertask/usertask.component';
 import { PricePipe } from './price.pipe';
 import { UserDetailsComponent } from './user-details/user-details.component';
 import { EditUserComponent } from './edit-user/edit-user.component';
+import { AccountDetailesComponent } from './account-detailes/account-detailes.component';
+import { EditAccountComponent } from './edit-account/edit-account.component';
 
 @NgModule({
   declarations: [
@@ -60,7 +62,9 @@ import { EditUserComponent } from './edit-user/edit-user.component';
     UsertaskComponent,
     PricePipe,
     UserDetailsComponent,
-    EditUserComponent
+    EditUserComponent,
+    AccountDetailesComponent,
+    EditAccountComponent
   ],
   imports: [
     BrowserModule,
