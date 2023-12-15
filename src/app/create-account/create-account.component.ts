@@ -23,16 +23,20 @@ public accountform:FormGroup = new FormGroup({
       (data:any)=>
       {
         this.id=data.id;
-        _createaccountservice.getaccounts(data.id).subscribe(
-          (data:any)=>
-          {
-            this.accountform.patchValue(data);
-          },
-          (error:any)=>
-          {
-            alert("internal error")
-          }
-        )
+        if(this.id)
+        {
+          _createaccountservice.getaccounts(data.id).subscribe(
+            (data:any)=>
+            {
+              this.accountform.patchValue(data);
+            },
+            (error:any)=>
+            {
+              alert("internal error")
+            }
+          )
+        }
+        
       }
     )
 

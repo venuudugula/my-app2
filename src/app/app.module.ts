@@ -33,6 +33,9 @@ import { UserDetailsComponent } from './user-details/user-details.component';
 import { EditUserComponent } from './edit-user/edit-user.component';
 import { AccountDetailesComponent } from './account-detailes/account-detailes.component';
 import { EditAccountComponent } from './edit-account/edit-account.component';
+import { VehicleDetailsComponent } from './vehicle-details/vehicle-details.component';
+import { ParentComponent } from './parent/parent.component';
+import { ChildComponent } from './child/child.component';
 
 @NgModule({
   declarations: [
@@ -64,7 +67,10 @@ import { EditAccountComponent } from './edit-account/edit-account.component';
     UserDetailsComponent,
     EditUserComponent,
     AccountDetailesComponent,
-    EditAccountComponent
+    EditAccountComponent,
+    VehicleDetailsComponent,
+    ParentComponent,
+    ChildComponent
   ],
   imports: [
     BrowserModule,

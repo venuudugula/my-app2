@@ -1,22 +1,28 @@
-<h1>Create Vehicle Form</h1>
+<div class="parent">
+    <div class="child">
+        <div class="vehicle">
+        <h1 *ngIf="!id">Create Vehicle Form</h1>
+        <h1 *ngIf="id">Create Vehicle Form</h1>
 
-<form class="form1" [formGroup]="vehicleform">
-    <label >Vehicle</label>&nbsp;&nbsp;
-    <input type="text" formControlName="Vehicle">
-    <br>
-    <br>
-    <label >manufacturer</label>&nbsp;&nbsp;
-    <input type="number" formControlName="manufacturer">
-    <br>
-    <br>
-    <label >model</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <input type="text" formControlName="model">
-    <br>
-    <br>
-    <label >image</label>&nbsp;&nbsp;
-    <input type="text" formControlName="image">
-    <br>
-    <br>
-    <button (click)="submit()">submit</button>
+        <form class="form1" [formGroup]="vehicleform">
+            <label>Vehicle :</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="text" formControlName="Vehicle">
+            <br>
+            <br>
+            <label>manufacturer : </label>&nbsp;
+            <input type="text" formControlName="manufacturer">
+            <br>
+            <br>
+            <label>model: </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="text" formControlName="model">
+            <br>
+            <br>
+            <label>image: </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="text" formControlName="image">
+            <br>
+            <br>
+            <button (click)="submit()">{{id ? 'Update':'Create'}}</button>
 
-</form>
+        </form>
+    </div>
+</div>

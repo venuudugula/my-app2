@@ -27,6 +27,8 @@ import { NotiifyGuard } from './notiify.guard';
 import { UserDetailsComponent } from './user-details/user-details.component';
 import { AccountDetailesComponent } from './account-detailes/account-detailes.component';
 import { EditAccountComponent } from './edit-account/edit-account.component';
+import { VehicleDetailsComponent } from './vehicle-details/vehicle-details.component';
+import { ParentComponent } from './parent/parent.component';
 
 const routes: Routes = [
   {path:'',component:LoginComponent},
@@ -53,7 +55,11 @@ const routes: Routes = [
     {path:'user-details/:id',component:UserDetailsComponent},
     {path:'edit-user/:id',component:CreateUserComponent},
     {path:'account-detailes/:id',component:AccountDetailesComponent},
-    {path:'edit-account/:id',component:CreateAccountComponent}
+    {path:'edit-account/:id',component:CreateAccountComponent},
+    {path:'vehicle-details/:id',component:VehicleDetailsComponent},
+    {path:'editvehicle-details/:id',component:CreatevehicleComponent},
+    {path:'parent',component:ParentComponent}
+    
 
     ]},
     {path:'login',component:LoginComponent},

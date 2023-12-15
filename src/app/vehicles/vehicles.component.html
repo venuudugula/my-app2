@@ -9,6 +9,7 @@
             <th>fuel</th>
             <th>color</th>
             <th>image</th>
+            <th>Action</th>
         </tr>
     </thead>
     <tbody>
@@ -23,6 +24,11 @@
             <td>{{vehicle.color}}</td>
             <td>
                 <img class="image1" src="{{vehicle.image}}" alt="">
+            </td>
+            <td>
+                <!-- <button (click)="delete()">delete</button> -->
+                <button (click)="view(vehicle.id)">view</button>
+                <button (click)="edit(vehicle.id)">edit</button>
             </td>
         </tr>
     </tbody>
