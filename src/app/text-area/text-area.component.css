@@ -1,0 +1,32 @@
+
+.main{
+    height: 100%;
+    width: 100%;
+    background-color:turquoise;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.parent {
+    position: relative;
+    color: black;
+    height: 20%;
+    width:20%;
+   
+   
+}
+
+textarea {
+    height: 100%;
+    width: 100%;
+    background-color: aqua;
+    
+}
+
+.character-count {
+    position: absolute;
+    color: black;
+    bottom: 0;
+    right: 0;
+    margin-bottom: 10px; 
+}

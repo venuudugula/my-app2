@@ -29,6 +29,13 @@ import { AccountDetailesComponent } from './account-detailes/account-detailes.co
 import { EditAccountComponent } from './edit-account/edit-account.component';
 import { VehicleDetailsComponent } from './vehicle-details/vehicle-details.component';
 import { ParentComponent } from './parent/parent.component';
+import { ItemsComponent } from './items/items.component';
+import { NavComponent } from './nav/nav.component';
+import { CartComponent } from './cart/cart.component';
+import { RatingComponent } from './rating/rating.component';
+import { RatingChildComponent } from './rating-child/rating-child.component';
+import { TextAreaComponent } from './text-area/text-area.component';
+import { AboutCompanyComponent } from './about/about-company/about-company.component';
 
 const routes: Routes = [
   {path:'',component:LoginComponent},
@@ -58,7 +65,14 @@ const routes: Routes = [
     {path:'edit-account/:id',component:CreateAccountComponent},
     {path:'vehicle-details/:id',component:VehicleDetailsComponent},
     {path:'editvehicle-details/:id',component:CreatevehicleComponent},
-    {path:'parent',component:ParentComponent}
+    {path:'parent',component:ParentComponent},
+    {path:'items',component:ItemsComponent},
+    {path:'Nav',component:NavComponent},
+    {path:'cart',component:CartComponent},
+    {path:'rating',component:RatingComponent},
+    {path:'rating-child',component:RatingChildComponent},
+    {path:'text-area',component:TextAreaComponent},
+    {path:'about-company',component:AboutCompanyComponent}
     
 
     ]},

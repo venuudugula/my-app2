@@ -36,6 +36,13 @@ import { EditAccountComponent } from './edit-account/edit-account.component';
 import { VehicleDetailsComponent } from './vehicle-details/vehicle-details.component';
 import { ParentComponent } from './parent/parent.component';
 import { ChildComponent } from './child/child.component';
+import { ItemsComponent } from './items/items.component';
+import { NavComponent } from './nav/nav.component';
+import { CartComponent } from './cart/cart.component';
+import { RatingComponent } from './rating/rating.component';
+import { RatingChildComponent } from './rating-child/rating-child.component';
+import { TextAreaComponent } from './text-area/text-area.component';
+import { AboutModule } from './about/about.module';
 
 @NgModule({
   declarations: [
@@ -70,14 +77,22 @@ import { ChildComponent } from './child/child.component';
     EditAccountComponent,
     VehicleDetailsComponent,
     ParentComponent,
-    ChildComponent
+    ChildComponent,
+    ItemsComponent,
+    NavComponent,
+    CartComponent,
+    RatingComponent,
+    RatingChildComponent,
+    TextAreaComponent
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    AboutModule
 
   ],
   providers: [],

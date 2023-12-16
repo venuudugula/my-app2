@@ -1,0 +1,6 @@
+
+<h2>Rating Component</h2>
+<label for="ratingInput">Enter Rating:</label>
+<input type="number" id="ratingInput" [(ngModel)]="userRating">
+
+<app-rating-child [selectedRating]="userRating"></app-rating-child>
