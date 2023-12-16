@@ -7,7 +7,8 @@ const routes: Routes = [
   {path:'',component:UpipaymentComponent},
   {path:'upipayment',component:UpipaymentComponent},
   {path:'card-payment',component:CardPaymentComponent},
-  {path:'netbanking',component:CardPaymentComponent}
+  {path:'netbanking',component:CardPaymentComponent},
+  
 ];
 
 @NgModule({
