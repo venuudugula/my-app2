@@ -46,7 +46,7 @@ const routes: Routes = [
     {path:'Event',component:EventComponent},
     {path:'Cars',component:CarsComponent},
     {path:'Products',component:ProductsComponent},
-    {path:'Users',component:UsersComponent},
+    {path:'user-details',component:UsersComponent},
     {path:'accounts',component:AccountsComponent},
     {path:'vehicles',component:VehiclesComponent},
     {path:'flipkartproducts',component:FlipkartproductsComponent},
@@ -74,11 +74,9 @@ const routes: Routes = [
     {path:'text-area',component:TextAreaComponent},
     {path:'about-company',component:AboutCompanyComponent},
     {
-      path: 'payments',
+      path:'payments',
       loadChildren: () => import('./payments/payments.module').then(m => m.PaymentsModule)
     }
-    
-
     ]},
     {path:'login',component:LoginComponent},
 

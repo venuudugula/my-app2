@@ -1,6 +1,5 @@
 <input type="text" placeholder="search" (keypress)="getfilterdUser()"[(ngModel)]="term">
 <br>
-
 <label for="">column</label>
 <select [(ngModel)]="colom">
   <option value="fee">Fee</option>
@@ -19,17 +18,11 @@
 <option >3</option>
 <option >4</option>
 <option >5</option>
-
 </select>
 <button (click)="page()">Page</button>
-
-
-
-
 <table class="tab" border="1">
     <thead>
       <tr>
-  
           <th>name</th>
         <th>phone</th>
         <th>city</th>

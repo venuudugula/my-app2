@@ -22,17 +22,16 @@ export class UsersComponent {
       (error: any) => {
         alert("internal server error")
       }
-    )
-    
+    ) 
   }
   getfilterdUser()
     {
       this._userservice.getfilterdUser(this.term).subscribe(
 
-        (data: any) => {
+        (data: any) =>{
           this.Users = data;
         },
-        (error: any) => {
+        (error:any) => {
           alert("snkjngkngssgg")
         }
       )
@@ -40,7 +39,6 @@ export class UsersComponent {
     sort()
     {
       this._userservice.getsorteddUser(this.colom,this.order).subscribe(
-
         (data: any) => {
           this.Users = data;
         },
